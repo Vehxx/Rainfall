@@ -60,5 +60,5 @@ Here's a before and after shot of a render of the unprocessed fractal noise vs t
 
 ![comparison](https://user-images.githubusercontent.com/10524511/138627176-61f0bf0b-2605-4dc0-8983-1b1ceba55c0f.png)
 
-more screenshots coming in the next few days.
+More screenshots coming in the next few days.
 
