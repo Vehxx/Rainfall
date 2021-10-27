@@ -5,8 +5,8 @@
 Java implementation of a particle-based hydraulic erosion simulation algorithm. The program accepts a heightmap in the form of a 2D array of floats and returns a 2D array of floats. 
 
 Below is a render of a 512x512 grid of fractal noise which was run through the program with the default parameters. This simulation was allowed to run for 2 million iterations.
- 
-![final](https://user-images.githubusercontent.com/10524511/138621422-bd494912-0f6d-4316-b02c-66fbf7febc25.png)
+
+![erosion_render_0 3f_big](https://user-images.githubusercontent.com/10524511/139001604-97ba0026-a51f-4287-a97f-a799ddcdb8ab.png)
 
 Because flow of the simulated raindrops across the terrain emulates real-life physics, geographical features which are present in real terrain manifest in the simulation as well. Features such as gullies on the sides of mountains, sediment-filled valleys, and alluvial fans - where water drains from a narrow passage into a wider area - all appear.
 
@@ -32,7 +32,7 @@ Rainfall makes use of 5 basic variables which can be changed to achieve differen
 
 #### Scale
 
-Scale is used as a multiplier for determining the surface normal at any given point. Increasing this value would cause a raindrop to move a longer distance, whereas decreasing it would cause it to move a shorter distance.
+Scale is used as a multiplier for determining the surface normal at any given point. Increasing this value would cause a raindrop to move a farther distance, whereas decreasing it would cause it to move a shorter distance. This is because the scale directly affects the speed of the raindrop. Acceleration = force / mass, and this variable determines the force in that equation.
 
 #### Density
 
@@ -48,17 +48,17 @@ Evaporation rate is how many times the raindrop can move to a new position befor
 
 #### Deposition Rate
 
-Deposition rate is a multiplier which helps control how much sediment is eroded from or deposited to the terrain.
+Deposition rate is a multiplier which controls how much sediment is deposited to the terrain.
 
 Here is an example of the difference between an output with this value set to 0.3f (default), vs 0.1f, with no other changes.
 
-![comparison](https://user-images.githubusercontent.com/10524511/138626566-ec838c38-3d38-4649-9438-1cc707deabca.png)
+![dep_comparison](https://user-images.githubusercontent.com/10524511/139002315-5c8c647f-3ff5-4f12-bbcc-2f9374afe5f7.png)
 
 ### Screenshots
 
 Here's a before and after shot of a render of the unprocessed fractal noise vs the same noise which was run through Rainfall:
 
-![comparison](https://user-images.githubusercontent.com/10524511/138627176-61f0bf0b-2605-4dc0-8983-1b1ceba55c0f.png)
+![erosion_comparison](https://user-images.githubusercontent.com/10524511/139002320-41b00560-6958-4f69-a5ee-ff8ffab1a139.png)
 
 More screenshots coming in the next few days.
 
