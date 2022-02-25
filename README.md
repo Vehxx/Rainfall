@@ -60,5 +60,3 @@ Here's a before and after shot of a render of the unprocessed fractal noise vs t
 
 ![erosion_comparison](https://user-images.githubusercontent.com/10524511/139002320-41b00560-6958-4f69-a5ee-ff8ffab1a139.png)
 
-More screenshots coming in the next few days.
-
